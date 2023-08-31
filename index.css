@@ -1,0 +1,64 @@
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:hsla(327, 86%, 41%, 0.729);
+    font-family: 'Arial';
+}
+.login{
+        width: 382px;
+        overflow: hidden;
+        margin: auto;
+        margin: 20 0 0 450px;
+        padding: 80px;
+        background: hwb(309 90% 5%);
+        border-radius: 15px ;
+
+}
+h1{
+    text-align: center;
+    color: hwb(210 1% 98%);
+    padding: 20px;
+}
+label{
+    color: hsl(180, 11%, 4%);
+    font-size: 17px;
+}
+#Uname{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    background-color: #fcf5f5;
+}
+#Pass{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+    background-color: #fdf8f8;
+
+}
+#log{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: hwb(120 2% 97%);
+    cursor: pointer;
+
+
+}
+span{
+    color: hsl(0, 33%, 1%);
+    font-size: 17px;
+}
+a{
+    float: right;
+    background-color: hsl(0, 8%, 3%);
+}
