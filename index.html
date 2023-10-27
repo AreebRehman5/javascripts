@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Quiz App</title>
+
 </head>
 <body>
-    <h1>Object in Javascript</h1>
-    <div>
-        <div>
-            <img class="carImage" id="carImage" src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="">
-        </div>
-        <div>
-            <p>Car Name : <span id="carName"></span></p>
-            <p>Car Model : <span id="carModel"></span></p>
-            <p>Car Color :<span id="carColor"></span></p>
-            <p>Used by : <span id="carUsage"></span></p>
-            <!-- <p><span></span></p> -->
-        </div>
+    <div class="container">
+        <div class="containerDiv">
+            <div class="titleNcountDiv">
+                <div class="titleName" id="title">Super Quiz</div>
+                <div id="timer" class="countDown">00</div>
+            </div>
+            <div class="tiitleAndCountDown">
+                <div class="ImageDiv" id="queImage"><img src="./assets/que image-01.png" alt="" class="Image"></div>
+                <span class="queCount" id="queNumber"> <span id="queCountNo">1</span> / 10</span>
+                <div class="ImageDiv" id="winningImage" style="display: none"><img src="./assets/winning image-02-02.png" alt="" class="Image"></div>
+                <div class="ImageDiv" id="losingImage" style="display: none"><img src="./assets/lose image-02.png" alt="" class="Image"></div>
+            </div>
+            <div class="queDivContainer">
+                <div id="quizDiv" class="quizDiv"></div>
+                <div id="resultDiv" style="display: none">
+                </div>
+                <div id="scoreMainContainer" style="display: none;">
+                    <div class="scoreMainDiv">
+                        <div class="scoreFirstDiv">
+                            <span id="scoreNo" class="numbersCount" style="display: none ; color: #1ad06e;">00</span>
+                            <div id="score" class="scoreCount" style="display: none">Score</div>
+                        </div>
+                        <div class="scoreFirstDiv">
+                            <span id="wrongNo" class="numbersCount" style="display: none; color: #db4a4a;">00</span>
+                            <div id="wrongDiv" class="scoreCount" style="display: none">Wrong</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="retryBtn" class="nextBtn" style="display: none;">Again</button>
+                    <!-- <div id="wrongDiv" class="scoreCount" style="display: none">Wrong : <span id="wrongNo">00</span></div> -->
+                <button id="nextBtn" disabled class="nextBtn">Next</button>
+            </div>
     </div>
-
-    <script src="./object.js"></script>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>
